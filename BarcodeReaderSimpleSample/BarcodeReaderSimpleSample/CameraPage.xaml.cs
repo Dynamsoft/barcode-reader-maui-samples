@@ -1,7 +1,8 @@
 ﻿using Dynamsoft.Core.Maui;
-using Dynamsoft.CaptureVisionRouter.Maui;
+
 using Dynamsoft.BarcodeReader.Maui;
 using Dynamsoft.CameraEnhancer.Maui;
+using Dynamsoft.CaptureVisionRouterLite.Maui;
 
 namespace BarcodeReaderSimpleSample;
 
@@ -71,5 +72,10 @@ public partial class CameraPage : ContentPage, ICapturedResultReceiver, IComplet
         {
             DisplayAlert("Error", errorMessage, "OK");
         });
+    }
+
+    public void OnSuccess()
+    {
+        
     }
 }
