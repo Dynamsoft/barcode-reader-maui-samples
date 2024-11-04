@@ -2,7 +2,7 @@
 
 using Dynamsoft.BarcodeReader.Maui;
 using Dynamsoft.CameraEnhancer.Maui;
-using Dynamsoft.CaptureVisionRouterLite.Maui;
+using Dynamsoft.CaptureVisionRouter.Maui;
 
 namespace BarcodeReaderSimpleSample;
 
