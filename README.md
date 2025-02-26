@@ -1,9 +1,9 @@
 # Dynamsoft Barcode Reader samples for MAUI edition
 
-This repository contains multiple samples that demonstrate how to use the [Dynamsoft Barcode Reader MAUI SDK](https://www.dynamsoft.com/barcode-reader/docs/mobile/programming/maui/).
+This repository contains samples that demonstrate how to use the [Dynamsoft Capture Vision MAUI SDK](https://www.dynamsoft.com/capture-vision/docs/mobile/programming/maui/) to read barcodes.
 
-- [User Guide](https://www.dynamsoft.com/barcode-reader/docs/mobile/programming/maui/user-guide.html)
-- [API Reference](https://www.dynamsoft.com/barcode-reader/docs/mobile/programming/maui/api-reference/)
+- [User Guide](https://www.dynamsoft.com/barcode-reader/docs/mobile/programming/maui/user-guide.html?product=dcv&lang=maui)
+- [API Reference](https://www.dynamsoft.com/barcode-reader/docs/mobile/programming/maui/api-reference/?product=dcv&lang=maui)
   
 ## System Requirements
 
@@ -32,7 +32,7 @@ This repository contains multiple samples that demonstrate how to use the [Dynam
 
 ## Installation
 
-- [Install the Dynamsoft Barcode Reader MAUI SDK](https://www.dynamsoft.com/barcode-reader/docs/mobile/programming/maui/user-guide.html#installation)
+- [Install the Dynamsoft Barcode Reader MAUI SDK](https://www.dynamsoft.com/barcode-reader/docs/mobile/programming/maui/user-guide.html#installation?product=dcv&lang=maui)
 
 ## License
 
