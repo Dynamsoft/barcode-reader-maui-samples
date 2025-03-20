@@ -3,6 +3,7 @@
 using Dynamsoft.BarcodeReader.Maui;
 using Dynamsoft.CameraEnhancer.Maui;
 using Dynamsoft.CaptureVisionRouter.Maui;
+using Dynamsoft.Utility.Maui;
 
 namespace BarcodeReaderSimpleSample;
 
@@ -18,6 +19,9 @@ public partial class CameraPage : ContentPage, ICapturedResultReceiver, IComplet
         router = new CaptureVisionRouter();
         router.SetInput(enhancer);
         router.AddResultReceiver(this);
+        var filter = new MultiFrameResultCrossFilter();
+        filter.EnableResultCrossVerification(EnumCapturedResultItemType.CRIT_BARCODE, true);
+        router.AddResultFilter(filter);
     }
 
     protected override void OnHandlerChanged()
