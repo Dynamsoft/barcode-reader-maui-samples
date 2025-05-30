@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScanBarcodes_ReadyToUseComponent.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Label
+            Grid.Row="1"
+            x:Name="label"
+            Text="Click button to Scan a Barcode"
+            Style="{StaticResource SubHeadline}"
+            SemanticProperties.HeadingLevel="Level2"
+            SemanticProperties.Description="Click button to Scan a Barcode"
+            HorizontalOptions="Center"
+            VerticalOptions="Center" />
+
+        <Button
+            Grid.Row="2"
+            x:Name="ScanBtn"
+            Text="Scan a Barcode"
+            SemanticProperties.Hint="Click button to Scan a Barcode"
+            Clicked="OnScanBarcode"
+            HorizontalOptions="Center"
+            VerticalOptions="Start"
+            Margin="0,30" />
+    </Grid>
+</ContentPage>
+
