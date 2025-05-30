@@ -1,6 +1,6 @@
 # Dynamsoft Barcode Reader samples for MAUI edition
 
-This repository contains samples that demonstrate how to use the [Dynamsoft Capture Vision MAUI SDK](https://www.dynamsoft.com/capture-vision/docs/mobile/programming/maui/) to read barcodes.
+This repository contains samples that demonstrate how to use the [Dynamsoft Barcode Reader MAUI SDK](https://www.dynamsoft.com/barcode-reader/docs/mobile/programming/maui/) to read barcodes.
 
 - [User Guide](https://www.dynamsoft.com/barcode-reader/docs/mobile/programming/maui/user-guide.html?product=dcv&lang=maui)
 - [API Reference](https://www.dynamsoft.com/barcode-reader/docs/mobile/programming/maui/api-reference/?product=dcv&lang=maui)
@@ -9,7 +9,7 @@ This repository contains samples that demonstrate how to use the [Dynamsoft Capt
 
 ### .Net
 
-- .NET 7.0 and above.
+- .NET 8.0 and above.
 
 ### Android
 
@@ -20,7 +20,7 @@ This repository contains samples that demonstrate how to use the [Dynamsoft Capt
 
 ### iOS
 
-- Supported OS: **iOS 11.0** or higher.
+- Supported OS: **iOS 13.0** or higher.
 - Supported ABI: **arm64** and **x86_64**.
 - Development Environment: Visual Studio 2022 for Mac and Xcode 14.3+.
 
@@ -28,7 +28,9 @@ This repository contains samples that demonstrate how to use the [Dynamsoft Capt
 
 | Sample Name | Description |
 | ----------- | ----------- |
-| `BarcodeReaderSimpleSample` | This is a sample that illustrates the simplest way to recognize barcodes from video streaming. |
+| `ScanBarcodes_FoundationalAPI` | This is a sample that illustrates the simplest way to recognize barcodes from video streaming using foundational APIs. |
+| `ScanBarcodes_ReadyToUseComponent` | This is a sample that illustrates the simplest way to recognize barcodes from video streaming using BarcodeScanner Component. |
+| `ScanDriverLicense` | This sample demonstrates the simplest approach to recognizing a PDF417 barcode from video streaming and extracting structured data from its encoded data. |
 
 ## Installation
 
