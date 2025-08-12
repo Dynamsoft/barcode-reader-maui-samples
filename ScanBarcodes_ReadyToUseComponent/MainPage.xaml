@@ -7,28 +7,40 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <Label
-            Grid.Row="1"
-            x:Name="label"
-            Text="Click button to Scan a Barcode"
-            Style="{StaticResource SubHeadline}"
-            SemanticProperties.HeadingLevel="Level2"
-            SemanticProperties.Description="Click button to Scan a Barcode"
-            HorizontalOptions="Center"
-            VerticalOptions="Center" />
+        <ScrollView Grid.Row="0" 
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center">
+            <Label
+                x:Name="label"
+                Text="Click button to Scan Barcodes"      
+                FontSize="16"
+                SemanticProperties.Description="Click button to Scan a Barcode"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+        </ScrollView>
 
         <Button
-            Grid.Row="2"
-            x:Name="ScanBtn"
-            Text="Scan a Barcode"
-            SemanticProperties.Hint="Click button to Scan a Barcode"
-            Clicked="OnScanBarcode"
+            Grid.Row="1"
+            x:Name="BtnScanSingle"
+            Text="Scan single Barcode"
+            SemanticProperties.Hint="Click button to Scan single Barcode"
+            Clicked="OnScanSingleBarcode"
             HorizontalOptions="Center"
-            VerticalOptions="Start"
-            Margin="0,30" />
+            VerticalOptions="End"
+            Margin="0,20" />
+        
+        <Button
+            Grid.Row="2"
+            x:Name="BtnScanMultiple"
+            Text="Scan Multiple Barcodes"
+            SemanticProperties.Hint="Click button to Scan Multiple Barcodes"
+            Clicked="OnScanMultipleBarcode"
+            HorizontalOptions="Center"
+            VerticalOptions="End"
+            Margin="0,20" />
     </Grid>
 </ContentPage>
 
