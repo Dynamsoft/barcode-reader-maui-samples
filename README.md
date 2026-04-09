@@ -9,7 +9,7 @@ This repository contains samples that demonstrate how to use the [Dynamsoft Barc
 
 ### .Net
 
-- .NET 8.0 and above.
+- .NET 10.0 and above.
 
 ### Android
 
