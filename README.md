@@ -31,6 +31,7 @@ This repository contains samples that demonstrate how to use the [Dynamsoft Barc
 | `ScanBarcodes_FoundationalAPI` | This is a sample that illustrates the simplest way to recognize barcodes from video streaming using foundational APIs. |
 | `ScanBarcodes_ReadyToUseComponent` | This is a sample that illustrates the simplest way to recognize barcodes from video streaming using BarcodeScanner Component. |
 | `ScanDriverLicense` | This sample demonstrates the simplest approach to recognizing a PDF417 barcode from video streaming and extracting structured data from its encoded data. |
+| `ScanVIN` | This sample demonstrates how to recognize and extract information from VIN barcodes in real-time video streaming. |
 
 ## Installation
 
