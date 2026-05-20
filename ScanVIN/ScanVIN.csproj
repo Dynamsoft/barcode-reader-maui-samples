@@ -46,7 +46,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Dynamsoft.BarcodeReaderBundle.Maui" Version="11.4.1200" />
+		<PackageReference Include="Dynamsoft.BarcodeReaderBundle.Maui" Version="11.4.1300" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.0" />
 	</ItemGroup>
