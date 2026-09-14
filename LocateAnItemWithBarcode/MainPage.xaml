@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LocateAnItemWithBarcode.MainPage"
+             BackgroundColor="Black"
+             Shell.NavBarIsVisible="False">
+
+    <Grid Padding="20">
+        <Border MaximumWidthRequest="360"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                BackgroundColor="#5A5A5A"
+                StrokeThickness="0"
+                Padding="24"
+                StrokeShape="RoundRectangle 12">
+            <VerticalStackLayout Spacing="0">
+                <Label Text="Locate an Item with Barcode"
+                       TextColor="White"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center" />
+
+                <BoxView HeightRequest="24" Opacity="0" />
+
+                <Label Text="1.Enter or Scan the Item ID that you're searching for:"
+                       TextColor="#DDDDDD"
+                       FontSize="14" />
+
+                <BoxView HeightRequest="12" Opacity="0" />
+
+                <Grid ColumnDefinitions="*,10,44">
+                    <Entry x:Name="ItemIdEntry"
+                           Grid.Column="0"
+                           Placeholder="Enter Item ID"
+                           PlaceholderColor="#999999"
+                           BackgroundColor="White"
+                           TextColor="#333333"
+                           FontSize="14"
+                           ReturnType="Done"
+                           Completed="OnItemIdCompleted" />
+
+                  <Button Grid.Column="2"
+                         Text="📷"
+                         FontSize="22"
+                            BackgroundColor="White"
+                            TextColor="#333333"
+                            CornerRadius="6"
+                            Padding="0"
+                            Clicked="OnScanPressed" />
+                </Grid>
+
+                <BoxView HeightRequest="20" Opacity="0" />
+
+                <Label Text="2.Start searching for the item"
+                       TextColor="#DDDDDD"
+                       FontSize="14" />
+
+                <BoxView HeightRequest="16" Opacity="0" />
+
+                <Button Text="Start Searching"
+                        BackgroundColor="#F5A623"
+                        TextColor="White"
+                        FontSize="16"
+                        FontAttributes="Bold"
+                        Padding="0,14"
+                        CornerRadius="8"
+                        Clicked="OnStartSearchPressed" />
+            </VerticalStackLayout>
+        </Border>
+    </Grid>
+
+</ContentPage>

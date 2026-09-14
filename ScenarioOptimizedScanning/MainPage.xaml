@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ScenarioOptimizedScanning"
+             x:Class="ScenarioOptimizedScanning.MainPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#151517">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="16,24,16,40" Spacing="16">
+            <Image
+                Source="dynamsoft_logo.png"
+                WidthRequest="200"
+                HeightRequest="40"
+                HorizontalOptions="Center"
+                Aspect="AspectFit" />
+
+            <Label
+                Text="Select Scanner by Barcode Format"
+                HorizontalTextAlignment="Center"
+                TextColor="#4ECDC4"
+                FontSize="18"
+                FontAttributes="Bold" />
+
+            <CollectionView
+                x:Name="BarcodeFormatsView"
+                ItemsSource="{Binding BarcodeFormats}"
+                SelectionMode="None"
+                HeightRequest="470">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" Span="3" HorizontalItemSpacing="10" VerticalItemSpacing="10" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="local:ScannerOption">
+                        <Border
+                            BackgroundColor="{Binding BackgroundColor}"
+                            Stroke="#3D3D3D"
+                            StrokeThickness="1"
+                            StrokeShape="RoundRectangle 12"
+                            Padding="8"
+                            HeightRequest="110">
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    CommandParameter="{Binding .}"
+                                    Tapped="OnOptionTapped" />
+                            </Border.GestureRecognizers>
+                            <VerticalStackLayout Spacing="8" VerticalOptions="Center" HorizontalOptions="Fill">
+                                <Label
+                                    Text="{Binding Label}"
+                                    HorizontalTextAlignment="Center"
+                                    TextColor="White"
+                                    FontSize="12"
+                                    LineBreakMode="WordWrap" />
+                                <Image
+                                    Source="{Binding ImageSource}"
+                                    Aspect="AspectFit"
+                                    HeightRequest="52"
+                                    HorizontalOptions="Fill" />
+                            </VerticalStackLayout>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <Label
+                Text="Select Scanner by Your Scenario"
+                HorizontalTextAlignment="Center"
+                TextColor="#4ECDC4"
+                FontSize="18"
+                FontAttributes="Bold" />
+
+            <CollectionView
+                x:Name="ScenariosView"
+                ItemsSource="{Binding Scenarios}"
+                SelectionMode="None"
+                HeightRequest="110">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" Span="3" HorizontalItemSpacing="10" VerticalItemSpacing="10" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="local:ScannerOption">
+                        <Border
+                            BackgroundColor="{Binding BackgroundColor}"
+                            Stroke="#3D3D3D"
+                            StrokeThickness="1"
+                            StrokeShape="RoundRectangle 12"
+                            Padding="8"
+                            HeightRequest="110">
+                            <Border.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    CommandParameter="{Binding .}"
+                                    Tapped="OnOptionTapped" />
+                            </Border.GestureRecognizers>
+                            <VerticalStackLayout Spacing="8" VerticalOptions="Center" HorizontalOptions="Fill">
+                                <Label
+                                    Text="{Binding Label}"
+                                    HorizontalTextAlignment="Center"
+                                    TextColor="White"
+                                    FontSize="12"
+                                    LineBreakMode="WordWrap" />
+                                <Image
+                                    Source="{Binding ImageSource}"
+                                    Aspect="AspectFit"
+                                    HeightRequest="52"
+                                    HorizontalOptions="Fill" />
+                            </VerticalStackLayout>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

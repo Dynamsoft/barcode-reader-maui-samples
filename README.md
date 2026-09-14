@@ -28,10 +28,14 @@ This repository contains samples that demonstrate how to use the [Dynamsoft Barc
 
 | Sample Name | Description |
 | ----------- | ----------- |
-| `ScanBarcodes_FoundationalAPI` | This is a sample that illustrates the simplest way to recognize barcodes from video streaming using foundational APIs. |
-| `ScanBarcodes_ReadyToUseComponent` | This is a sample that illustrates the simplest way to recognize barcodes from video streaming using BarcodeScanner Component. |
-| `ScanDriverLicense` | This sample demonstrates the simplest approach to recognizing a PDF417 barcode from video streaming and extracting structured data from its encoded data. |
-| `ScanVIN` | This sample demonstrates how to recognize and extract information from VIN barcodes in real-time video streaming. |
+| `ScanBarcodes_FoundationalAPI`                                       | This is a sample that illustrates the simplest way to recognize barcodes from video streaming using foundational APIs. |
+| `ScanBarcodes_ReadyToUseComponent`                                   | This is a sample that illustrates the simplest way to recognize barcodes from video streaming using BarcodeScanner Component. |
+| `BarcodeReaderSettings`                                              | This sample demonstrates real-time barcode result rendering with a full-screen camera preview and bottom result overlay. |
+| `LocateAnItemWithBarcode`                                            | This sample demonstrates how to locate a specific barcode by its text. Useful for inventory management and warehouse operations. |
+| `ReadGS1AI`                                                          | This sample demonstrates how to parse and decode GS1 Application Identifiers (AIs) from barcodes. |
+| `ScanDriversLicense`                                                 | This sample demonstrates how to implement the ability to scan drivers' licenses using the Foundational API.       |
+| `ScanVIN`                                                            | This sample demonstrates how to recognize and extract information from VIN barcodes in real-time video streaming. |
+| `ScenarioOptimizedScanning`                                          | This sample demonstrates template-driven scanner optimization for different barcode formats and scenarios. |
 
 ## Installation
 

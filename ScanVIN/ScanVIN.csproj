@@ -14,7 +14,7 @@
 		<ApplicationTitle>ScanVIN</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.dynamsoft.scanvin</ApplicationId>
+		<ApplicationId>com.dynamsoft.maui.scanvin</ApplicationId>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
@@ -46,7 +46,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Dynamsoft.BarcodeReaderBundle.Maui" Version="11.4.3000" />
+		<PackageReference Include="Dynamsoft.BarcodeReaderBundle.Maui" Version="11.6.2000" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.0" />
 	</ItemGroup>
