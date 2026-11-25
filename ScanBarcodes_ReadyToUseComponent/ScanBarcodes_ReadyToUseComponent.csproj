@@ -1,7 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net10.0-android;net10.0-ios</TargetFrameworks>
+		<TargetFrameworks>net10.0-android</TargetFrameworks>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('OSX'))">$(TargetFrameworks);net10.0-ios</TargetFrameworks>
 
 		<OutputType>Exe</OutputType>
 		<RootNamespace>ScanBarcodes_ReadyToUseComponent</RootNamespace>
@@ -48,7 +49,7 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.0" />
-		<PackageReference Include="Dynamsoft.BarcodeReaderBundle.Maui" Version="11.6.2000" />
+		<PackageReference Include="Dynamsoft.BarcodeReaderBundle.Maui" Version="11.6.5000" />
 	</ItemGroup>
 
 </Project>
